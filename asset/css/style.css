@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: var(--couleur-beige);
+    color: var(--couleur-foncee);
+    display: flex;
+    justify-content: space-between;
+    font-family:'poppins';
+    height: auto;
+    width: auto;
+}
+
+.logo{
+    width: 300px;
+}
+
+.recherche{
+    margin: 20px;
+    height: 50px;
+    width: 400px;
+    background-color: var(--couleur-blanc);
+    border-radius: 300px;
+    font-size:large ;
+    box-shadow: 5px 5px 5px #2F2F2F;
+}
+
+.nav{
+    background-image: url(../img/header\ montagne.png);
+    height: 500px;
+    width: auto;
+
+}
+
+.text{
+    font-size: 100px;
+    color: var(--couleur-blanc);
+    text-align: center;
+    
+}
+
+.menu{
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+}
+a{
+    padding: 20px;
+    text-decoration: none;
+    color: var(--couleur-foncee);
+    background-color: var(--couleur-blanc);
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 35px;
+    font-family: 'Open Sans';
+    box-shadow: 5px 5px 5px #2F2F2F;
+}
+.text{
+    grid-column: 1/6;
+    font-family: 'Open Sans';
+}
+.text-populaire{
+    font-family:'poppins';
+    font-size: 80px;
+    text-align: center;
+}
+.populaire{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.item-populaire{
+    margin: 10px;
+    background-color: var(--couleur-blanc);
+    border: #2F2F2F;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 30px;
+    font-family:'Open Sans' ;
+    box-shadow: 4px 4px 4px #2F2F2F;
+}
+.text-galerie{
+    font-family:'poppins';
+    font-size: 80px;
+    text-align: center;
+}
+.Galerie{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.item-galerie {
+    margin: 10px;
+    border: #2F2F2F;
+    width: 450px; /* Réduit la largeur des images sur tous les écrans */
+    height: 450px; /* Ajuste la hauteur des images */
+    justify-content: center;
+}
+
+
+
+.reservation-container {
+    background-color: var(--couleur-blanc);
+    padding: 30px;
+    border-radius: 10px;
+    width: 550px;
+    box-shadow: 0px 4px 6px var(--couleur-foncee);
+    text-align: center;
+    margin: 0 auto; 
+    margin-top: 50px; 
+    font-family:'poppins';
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.input-group input {
+    width: 50%;
+}
+
+input, button {
+    padding: 10px;
+    border: 1px solid var(--couleur-foncee);
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: var(--couleur-vert-foncee);
+    color: var(--couleur-blanc);
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--couleur-vert-clair);
+}
+
+.comments-section {
+    width: 100%; 
+    max-width: 1050px;
+    margin: 0 auto; 
+    text-align: center; 
+    margin-top: 40px; 
+    font-family:'poppins';
+}
+
+.comments-section h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: var(--couleur-foncee);
+}
+
+.comments-container {
+    display: flex; 
+    justify-content: center; 
+    gap: 15px; 
+    margin-top: 20px; 
+    width: 100%; 
+    box-sizing: border-box; 
+    flex-wrap: nowrap; 
+}
+
+.comment {
+    max-width: 33%; 
+    min-width: 250px; 
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-box {
+    
+    background-color: var(--couleur-blanc);
+    border: 1px solid var(--couleur-foncee);
+    padding: 15px; 
+    border-radius: 5px; 
+    text-align: left;
+    font-size: 20px;
+    word-wrap: break-word; 
+    overflow: hidden;
+    line-height: 1.5; 
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Open Sans';
+}
+
+.comment-footer {
+    margin-top: 5px;
+    font-size: 20px;
+    color: var(--couleur-foncee);
+    text-align: center;
+    font-family: 'Open Sans';
+    padding: 10px;
+}
+.footer{
+    background-color: var(--couleur-blanc);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.coordonnees {
+    font-family: 'Open Sans';
+    margin: 5px;
+    width: 80%;
+    text-align: right;
+    font-size: 20px;
+}
+.mentions{
+    text-align: center;
+    font-size: 15px;
+    grid-column: 1/3;
+}
+
+#hidden{
+    visibility: hidden;
+}
+
+@media (max-width: 768px) {
+    /* Règles globales pour éviter tout débordement */
+    body, html {
+        overflow-x: hidden; /* Désactive le défilement horizontal */
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    * {
+        max-width: 100%; /* Empêche les débordements horizontaux pour tout élément */
+        box-sizing: border-box; /* Inclut les marges et padding dans la taille */
+    }
+
+    /* Menu */
+    .menu {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 éléments par ligne */
+        gap: 5px; /* Espace entre les éléments */
+        padding: 5px; /* Réduit les marges internes */
+    }
+
+    .menu a {
+        font-size: 16px;
+        padding: 8px;
+        margin: 3px;
+        width: 100%; /* Ajuste la largeur des liens à leur conteneur */
+        text-align: center;
+    }
+
+    /* Section Populaire */
+    .populaire {
+        display: grid;
+        grid-template-columns: 1fr; /* Une seule colonne sur petits écrans */
+        gap: 10px;
+        padding: 5px;
+    }
+
+    .item-populaire {
+        font-size: 18px;
+        margin: 5px auto; /* Centre l'élément */
+        width: 100%; /* Ajuste la largeur */
+    }
+
+    /* Section Galerie */
+    .Galerie {
+        display: grid;
+        grid-template-columns: 1fr; /* Une seule colonne */
+        justify-items: center;
+        gap: 10px;
+    }
+
+    .item-galerie {
+        width: 80%; /* Réduit la taille des images à 80% du conteneur */
+        max-width: 300px; /* Limite la largeur maximale */
+        height: auto; /* Maintient les proportions */
+        margin: 5px auto; /* Centre les images avec un espace autour */
+        box-sizing: border-box;
+    }
+
+    /* Section de réservation */
+    .reservation-container {
+        width: 85%; /* Augmente la largeur à 85% de l'écran */
+        max-width: 350px; /* Augmente légèrement la largeur maximale */
+        margin: 15px auto; /* Centre le conteneur avec un espace un peu plus grand */
+        padding: 35px; /* Ajoute un peu plus de padding */
+        box-sizing: border-box; /* Assure que le padding n'ajoute pas au débordement */
+    }
+
+    /* Commentaires */
+    .comments-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 5px;
+    }
+
+    .comment {
+        margin: 5px auto;
+        width: 100%;
+    }
+
+    .comment-box {
+        height: 140px;
+        font-size: 14px;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    /* Footer */
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr; /* Une seule colonne */
+        padding: 10px;
+    }
+
+    /* Textes */
+    .text-populaire,
+    .text-galerie {
+        font-size: 25px; /* Texte réduit pour les petits écrans */
+    }
+
+    .text {
+        font-size: 25px;
+    }
+
+    .item-populaire {
+        font-size: 16px;
+    }
+
+    .comment-footer {
+        font-size: 14px;
+    }
+
+    .footer .mentions {
+        font-size: 12px;
+    }
+}
